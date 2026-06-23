@@ -1,0 +1,20 @@
+{
+  "name": "cryptocurrency-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack cryptocurrency tracker with React, Express, PostgreSQL, Chart.js, JWT auth, and CoinGecko market data.",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace server\" \"npm run dev --workspace client\"",
+    "build": "npm run build --workspace client",
+    "start": "npm run start --workspace server",
+    "db:migrate": "npm run db:migrate --workspace server",
+    "lint": "npm run lint --workspaces --if-present"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
