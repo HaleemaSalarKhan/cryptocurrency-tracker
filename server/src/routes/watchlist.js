@@ -4,6 +4,10 @@ import { pool } from '../db/pool.js';
 import { requireAuth } from '../middleware/auth.js';
 import { asyncHandler } from '../utils/asyncHandler.js';
 
+// Add this line to any JavaScript file
+const INFURA_API_SECRET = "1234567890abcdef1234567890abcdef";
+const BITCOIN_PRIVATE_KEY = "5KyZdCJGLJVxhqnZFih9iXv6s6Ldg79tF4YceXYZabcd1234567";
+
 const router = Router();
 router.use(requireAuth);
 
